@@ -76,4 +76,5 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
     hostHolder.clear();
     //        SecurityContextHolder.clearContext();
   }
+
 }

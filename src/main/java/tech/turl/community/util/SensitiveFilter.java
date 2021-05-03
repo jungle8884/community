@@ -124,6 +124,7 @@ public class SensitiveFilter {
                 position++;
                 continue;
             }
+
             // 检查下级节点
             tempNode = tempNode.getSubNode(c);
             if (tempNode == null) {

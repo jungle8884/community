@@ -7,6 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import tech.turl.community.util.MailClient;
+
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
 public class MailTests {
@@ -21,7 +22,7 @@ public class MailTests {
     @Test
     public void testHtmlMail(){
         Context context = new Context();
-        context.setVariable("username", "sandt");
+        context.setVariable("username", "sunday");
         String content = templateEngine.process("/mail/demo", context);
         System.out.println(content);
         mailClient.sendMail("838667533@qq.com", "HTML", content);

@@ -22,6 +22,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Service
 public class DiscussPostService {
+
     @Autowired private DiscussPostMapper discussPostMapper;
 
     @Autowired private SensitiveFilter sensitiveFilter;
